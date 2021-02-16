@@ -1,0 +1,33 @@
+@media (min-width: 1900px) {
+    .choice::before {
+        width: 42%;
+    }
+}
+
+@media (min-width: 2360px) {
+    .choice::before {
+        width: 44%;
+    }
+}
+
+@media (max-width: 1180px) {
+    .offers__item-inner {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .choice {
+        &::before {
+            width: 100%;
+            height: 100%;
+        }
+        &__inner {
+            display: block;
+            text-align: center;
+        }
+        &__item {
+            margin-right: 0;
+            box-shadow: none;
+            text-align: left;
+        }
+    }
+}
